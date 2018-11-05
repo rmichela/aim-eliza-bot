@@ -1,0 +1,603 @@
+initial: wassabie?
+final: k'bye!
+quit: bye
+quit: goodbye
+quit: gtg
+quit: brb
+quit: afk
+pre: forgot forget
+pre: dont do not
+pre: cant can not
+pre: wont will not
+pre: didnt did not
+pre: im i am
+pre: youre you are
+pre: yall you all
+pre: ive i have
+pre: ill i will
+pre: id i had
+pre: youre you are
+pre: youve you have
+pre: hes he is
+pre: shes she is
+pre: shell she will
+pre: itll it will
+pre: its it is
+pre: arent are not
+pre: cant can not
+pre: couldnt could not
+pre: didnt did not
+pre: hasnt has not
+pre: havent have not
+pre: hadnt had not
+pre: isnt is not
+pre: wasnt was not
+pre: wont will not
+pre: wouldnt would not
+pre: theres there is
+pre: thats that is
+pre: hows how is
+pre: whats what is
+pre: wheres where is
+pre: whos who is
+pre: couldnt could not
+pre: whats what is
+pre: don't do not
+pre: can't can not
+pre: won't will not
+pre: didn't did not
+pre: it's it is
+pre: i'm i am
+pre: your'e you are
+pre: ya'll you all
+pre: i've i have
+pre: i'll i will
+pre: i'd i had
+pre: you're you are
+pre: you've you have
+pre: he's he is
+pre: she's she is
+pre: she'll she will
+pre: it'll it will
+pre: are'nt are not
+pre: can't can not
+pre: could'nt could not
+pre: did'nt did not
+pre: has'nt has not
+pre: have'nt have not
+pre: had'nt had not
+pre: is'nt is not
+pre: was'nt was not
+pre: won't will not
+pre: would'nt would not
+pre: there's there is
+pre: that's that is
+pre: how's how is
+pre: what's what is
+pre: where's where is
+pre: who's who is
+pre: could'nt could not
+pre: what's what is
+pre: wouldnt would not
+pre: recollect remember
+pre: recall remember
+pre: dreamt dreamed
+pre: dreams dream
+pre: maybe perhaps
+pre: certainly yes
+pre: machine computer
+pre: machines computer
+pre: computers computer
+pre: were was
+pre: you're you are
+pre: same alike
+pre: identical alike
+pre: equivalent alike
+pre: iol i am laughing
+pre: jk i am just kidding
+pre: j/k i am just kidding
+pre: sec second
+pre: otoh on the other hand
+pre: prob probably
+pre: ya yes
+pre: yup yes
+pre: yep yes
+pre: yea yes
+pre: yeah yes
+pre: k yes
+pre: yo hello
+pre: hi hello
+pre: howdy hello
+pre: wassup hello
+pre: sup hello
+pre: r are
+pre: u you
+pre: y why
+pre: cuz because
+pre: age/sex/location a/s/l
+pre: asl a/s/l
+pre: wat what
+pre: iz is
+pre: ur your
+pre: doin doing
+pre: urs yours
+pre: lol I laugh out loud.
+pre: quot "
+post: am are
+post: me you
+post: myself yourself
+post: yourself myself
+post: i you
+post: you I
+post: my your
+post: i'm you are
+post: your my
+post: yours my
+synon: belief feel think believe wish
+synon: family mother mom father dad sister brother wife children child
+synon: desire want need
+synon: sad unhappy depressed sick down blue
+synon: happy elated glad better content satisfied
+synon: cannot can't
+synon: everyone everybody nobody noone
+synon: be am is are was
+key: xnone 0
+  decomp: *
+    reasmb: Yes...
+    reasmb: That is very interesting.
+    reasmb: So what are you suggesting?
+    reasmb: So what is your point?
+    reasmb: I see.
+    reasmb: And how does that relate to what we are talking about?
+    reasmb: I'm not following.
+    reasmb: Come again?
+key: sorry 0
+  decomp: *
+    reasmb: No need to appoligize.
+    reasmb: Don't be. Keep talking.
+    reasmb: Ya, well...what can I say.
+    reasmb: No biggie.
+key: apologise 0
+  decomp: *
+    reasmb: goto sorry
+key: remember 5
+  decomp: * i remember *
+    reasmb: Do you normaly think of (2)?
+    reasmb: Does thinking of (2) bring anything else to mind?
+    reasmb: What else do you remember?
+    reasmb: Why are you recalling (2) just now?
+    reasmb: What just reminded you of (2)?
+    reasmb: What is the connection between me and (2)?
+    reasmb: What else does (2) remind you of?
+  decomp: * do you remember *
+    reasmb: Did you think I would forget (2)?
+    reasmb: Of course I remember (2)?
+    reasmb: What about (2)?
+    reasmb: goto what
+    reasmb: You mentioned (2). Why?
+   decomp: * you remember *
+    reasmb: How could I forget (2)?
+    reasmb: What should I remembering about (2)?
+    reasmb: goto you
+key: forget 5
+   decomp: * i forget *
+    reasmb: How could you forget (2)? Geez!
+    reasmb: Why can't you remember (2)?
+    reasmb: How often do you think about (2)?
+    reasmb: Does it bother you to forget that?
+    reasmb: Could it be a mental block?
+    reasmb: Are you generally this forgetful?
+    reasmb: Do you think you are suppressing (2)?
+   decomp: * did you forget *
+    reasmb: Why do you ask?
+    reasmb: Are you sure you told me?
+    reasmb: Would it ie a problem if I forgot (2)?
+    reasmb: Why should I recall (2) just now?
+    reasmb: goto what
+    reasmb: Describe (2) for me.
+key: if 3
+  decomp: * if *
+    reasmb: Is it likely that (2)?
+    reasmb: Do you wish that (2)?
+    reasmb: What do you know about (2)?
+    reasmb: Really, if (2)? Hmmm....
+	reasmb: What would you do if (2)?
+	reasmb: But what are the chances that (2)?
+	reasmb: And the meaning of this is...?
+key: dreamed 4
+  decomp: * i dreamed *
+    reasmb: Really, (2)?
+    reasmb: Have you ever fantasized (2) while you were awake?
+    reasmb: Have you ever dreamed (2) before?
+    reasmb: goto dream
+key: dream 3
+  decomp: *
+    reasmb: How does this dream make you feel?
+    reasmb: Do you dream often?
+    reasmb: Who appears in your dreams?
+    reasmb: Could you elaborate?
+    reasmb: And what grounds does this dream have in reality?
+key: perhaps 0
+  decomp: *
+    reasmb: You don't seem sure of yourself.
+    reasmb: Why the uncertain tone?
+    reasmb: Can't you be more positive?
+    reasmb: You aren't sure?
+    reasmb: Don't you know?
+    reasmb: What do you think the chances are?
+key: name 15
+  decomp: * what * name *
+    reasmb: My name is Bjorn. What is yours?
+  decomp: *
+    reasmb: I have a name.
+    reasmb: I am Bjorn.
+    reasmb: goto xNone
+key: deutsch 0
+  decomp: *
+    reasmb: goto xforeign
+    reasmb: I told you before, I don't speak German.
+key: francais 0
+  decomp: *
+    reasmb: goto xforeign
+    reasmb: I told you before, I don't speak French.
+key: italiano 0
+  decomp: *
+    reasmb: goto xforeign
+    reasmb: I told you before, I don't speak Italian.
+key: espanol 0
+  decomp: *
+    reasmb: goto xforeign
+    reasmb: I told you before, I don't speak Spanish.
+key: xforeign 0
+  decomp: *
+    reasmb: I speak only English.
+key: hello 0
+  decomp: *
+    reasmb: wassabie?
+    reasmb: yo!
+    reasmb: sup
+key: computer 50
+  decomp: *
+    reasmb: Do computers scare you?
+    reasmb: Why do you mention computers?
+    reasmb: What do computers have to do with this?
+    reasmb: Don't you think computers can help people?
+    reasmb: What about machines worries you?
+    reasmb: What do you think about machines?
+    reasmb: You don't think I am a computer program, do you?
+key: am 0
+  decomp: * am i *
+    reasmb: Do you believe you are (2)?
+    reasmb: Would you want to be (2)?
+    reasmb: And what would happen if you were (2)?
+    reasmb: What would it mean if you were (2)?
+    reasmb: goto what
+  decomp: * i am *
+    reasmb: goto i
+  decomp: *
+    reasmb: I don't get the 'am' part. Explain.
+    reasmb: I don't get it.
+key: are 0
+  decomp: * are you *
+    reasmb: Why are you interested in whether I am (2) or not?
+    reasmb: Would it make you happier if I weren't (2)?
+    reasmb: Perhaps I am (2) in your fantasies.
+    reasmb: Do you sometimes think I am (2)?
+    reasmb: goto what
+    reasmb: And how does me being (2) concern you?
+    reasmb: And what if I were (2)?
+  decomp: * you are *
+    reasmb: goto you
+  decomp: * are *
+    reasmb: Ever stop to think that they might not be (2)?
+    reasmb: Would you like them if they were not (2)?
+    reasmb: What if they were'nt (2)?
+    reasmb: Aren't they always (2)?
+    reasmb: They could be (2).
+    reasmb: Are you positive they are (2)?
+key: your 0
+  decomp: * your *
+    reasmb: Why are you concerned over my (2)?
+    reasmb: What about your own (2)?
+    reasmb: What about my (2)?
+    reasmb: Really...my (2)?
+    reasmb: What makes you think of my (2)?
+    reasmb: Do you want my (2)?
+key: was 2
+  decomp: * was i *
+    reasmb: And what if you were (2)?
+    reasmb: Do you think you were (2)?
+    reasmb: Were you (2)?
+    reasmb: What would it mean if you were (2)?
+    reasmb: What does ' (2) ' suggest to you?
+    reasmb: goto what
+  decomp: * i was *
+    reasmb: Were you really?
+    reasmb: Why are you telling me you were (2) now?
+    reasmb: I allready knew you were (2).
+  decomp: * was you *
+    reasmb: You would like to believe I was (2). Wouldn't you?
+    reasmb: What evidence do you have that I was (2)?
+    reasmb: What do you think?
+    reasmb: I could have been (2).
+    reasmb: What if I had been (2)?
+key: i 1
+  decomp: * i @desire *
+    reasmb: What would it mean to you if you got (3)?
+    reasmb: Why do you want (3)?
+    reasmb: Suppose you got (3) soon.
+    reasmb: What if you never got (3)?
+    reasmb: What would getting (3) mean to you?
+    reasmb: What does wanting (3) have to do with this discussion?
+  decomp: *i wish *
+    reasmb: And what would happen if (2)?
+    reasmb: And what would you do if (2)?
+  decomp: $ * i am* @sad *
+    reasmb: I am sorry to hear that you are (3).
+    reasmb: And how will talking to me help being (3)?
+    reasmb: I'm sure it's not pleasant to be (3).
+    reasmb: Can you explain what made you (3)?
+  decomp: $ * i am* @happy *
+    reasmb: What's got you so (3)?
+    reasmb: What makes you (3) just now?
+    reasmb: Can you explain why you are suddenly (3)?
+  decomp: * i was *
+    reasmb: goto was
+  decomp: * i @belief i *
+    reasmb: Do you really think so?
+    reasmb: Are you sure you (3).
+    reasmb: Do you really doubt you (3)?
+  decomp: * i* @belief *you *
+    reasmb: goto you
+  decomp: $ * i am *
+    reasmb: How long have you been (2)?
+    reasmb: Is it normal for you to be (2)?
+    reasmb: Do you enjoy being (2)?
+    reasmb: Do you know anyone else who is (2)?
+  decomp: * i @cannot *
+    reasmb: How do you know that you can't (3)?
+    reasmb: Have you tried?
+    reasmb: Perhaps you could (3) now.
+    reasmb: Do you really want to be able to (3)?
+    reasmb: What if you could (3)?
+  decomp: * i don't *
+    reasmb: Don't you really (2)?
+    reasmb: Why don't you (2)?
+    reasmb: Do youwant to be able to (2)?
+    reasmb: Does that trouble you?
+  decomp: * i feel *
+    reasmb: Please continue..
+    reasmb: Do you often feel (2)?
+    reasmb: Do you enjoy feeling (2)?
+    reasmb: What makes you feel (2)?
+  decomp: * i * you *
+    reasmb: Perhaps in your fantasies we (2) each other.
+    reasmb: Do you want to (2) me?
+    reasmb: You seem to need to (2) me.
+    reasmb: Do you (2) anyone else?
+  decomp: *
+    reasmb: Why do you say (1)?
+    reasmb: Can you elaborate on that?
+    reasmb: Do you say (1) for some special reason?
+    reasmb: That's quite interesting.
+key: you 0
+  decomp: * you remind me of *
+    reasmb: goto alike
+  decomp: * you are *
+    reasmb: What makes you think I am (2)?
+    reasmb: Do you like to think I am (2)?
+    reasmb: Do you sometimes wish you were (2)?
+    reasmb: Perhaps you would like to be (2).
+  decomp: * you* me *
+    reasmb: Why do you think I (2) you?
+    reasmb: You like to think I (2) you -- don't you?
+    reasmb: What makes you think I (2) you?
+    reasmb: Really, I (2) you? Is that so?
+    reasmb: Do you want to believe I (2) you?
+    reasmb: Suppose I did (2) you -- what would that mean?
+    reasmb: Does anyone else believe I (2) you?
+  decomp: * you *
+    reasmb: Let's not talk about me, k?
+    reasmb: Oh, I (2)?
+    reasmb: You're not really talking about me -- are you?
+    reasmb: What are your feelings now?
+key: yes 0
+  decomp: *
+    reasmb: You're sure.
+    reasmb: Are you positive?
+    reasmb: I see.
+    reasmb: Who would have thought?
+    reasmb: I agree.
+    reasmb: Of course.
+    reasmb: Realy?
+    reasmb: I understand.
+    reasmb: Well that doesn't make any sense.
+    reasmb: You sure say yes allot!
+    reasmb: Well you're very agreeable today.
+key: no 0
+   decomp: * no one *
+    reasmb: Are you sure, no one (2)?
+    reasmb: Surely someone (2) .
+    reasmb: Can you think of anyone at all?
+    reasmb: Are you thinking someone in particular?
+    reasmb: Who, may I ask?
+    reasmb: You have a particular person in mind, don't you?
+    reasmb: Who do you think you are talking about?
+  decomp: *
+    reasmb: Why not?
+    reasmb: No?
+    reasmb: Are you sure?
+    reasmb: Absolutely non!
+    reasmb: I don't think you understand.
+    reasmb: Explain your logic here.
+    reasmb: Now that makes no sense at all.
+    reasmb: We're being mighty negative, aren't we?
+    reasmb: Are you always of such a bad disposition?
+    reasmb: Your negativity astounds me!
+key: my 2
+  decomp: $ * my *
+    reasmb: Lets discuss further why your (2).
+    reasmb: Earlier you said your (2).
+    reasmb: But your (2).
+    reasmb: Does that have anything to do with the fact that your (2)?
+  decomp: * my* @family *
+    reasmb: Tell me more about your (3).
+    reasmb: Who else in your family (4)?
+    reasmb: Your (3)?
+    reasmb: What else comes to mind when you think of your (3)?
+  decomp: * my *
+    reasmb: Your (2)?
+    reasmb: Why do you say your (2)?
+    reasmb: Does that remind you of anything else that belongs to you?
+    reasmb: Is it important to you that your (2)?
+key: can 0
+  decomp: * can you *
+    reasmb: If you believe I can (2).
+    reasmb: goto what
+    reasmb: You want me to (2)?
+    reasmb: Maby you just want to be able to (2) yourself.
+  decomp: * can i *
+    reasmb: I don't know...can you?
+    reasmb: Whether or not you can (2) depends on you more than on me.
+    reasmb: Do you want to be able to (2)?
+    reasmb: Perhaps you don't want to (2).
+    reasmb: goto what
+key: what 0
+  decomp: *
+    reasmb: Why do you ask?
+    reasmb: Does that question really interest you?
+    reasmb: What is it you really want to know?
+    reasmb: Do you always think about that?
+    reasmb: What answer would please you most?
+    reasmb: What do you think?
+    reasmb: What comes to mind when you ask that?
+    reasmb: Have you asked such questions before?
+    reasmb: Have you asked anyone else?
+key: who 1
+  decomp: * who * are * you
+    reasmb: My name is Bjorn. 
+  decomp:  who *
+	reasmb: goto what
+key: when 0
+   decomp:  when *
+	reasmb: goto what
+key: where 0
+  decomp: * where * you * from *
+    reasmb: I am from Sweden.
+  decomp: where *
+    reasmb: goto what
+key: how 0
+  decomp:  how *
+    reasmb: goto what
+key: because 0
+  decomp: *
+    reasmb: Is that the real reason?
+    reasmb: Come on! You can do better than that.
+    reasmb: Does that explain anything else?
+    reasmb: What other reasons might there be?
+key: why 0
+  decomp: * why don't you *
+    reasmb: Perhaps I will (2) in good time.
+    reasmb: Would you (2) yourself?
+    reasmb: You want me to (2)?
+    reasmb: goto what
+  decomp: * why can't i *
+    reasmb: Should be able to (2)?
+    reasmb: Do you want to (2)?
+    reasmb: Do you believe you can (2)?
+    reasmb: Do you have any idea why you can't (2)?
+    reasmb: goto what
+  decomp: *
+    reasmb: goto what
+key: everyone 2
+  decomp: * @everyone *
+    reasmb: Really, (2) (3)?
+    reasmb: Surely not (2).
+    reasmb: Can you think of anyone in particular?
+    reasmb: Who, for example?
+    reasmb: Who, may I ask?
+    reasmb: Someone special perhaps?
+    reasmb: You have a particular person in mind, don't you?
+    reasmb: Who do you think you're talking about?
+key: everybody 2
+  decomp: *
+    reasmb: goto everyone
+key: nobody 2
+  decomp: *
+    reasmb: goto everyone
+key: noone 2
+  decomp: *
+    reasmb: goto everyone
+key: always 1
+  decomp: *
+    reasmb: Could you give me a specific example?
+    reasmb: When?
+    reasmb: What incident are you thinking of?
+    reasmb: Really, always?
+key: alike 10
+  decomp: *
+    reasmb: In what way?
+    reasmb: What resemblence do you see?
+    reasmb: What could the similarity suggest?
+    reasmb: What other connections are ther?
+    reasmb: What do you suppose that resemblence means?
+    reasmb: So, what's the connection?
+    reasmb: Is that really true?
+    reasmb: How?
+key: like 10
+  decomp: * @be *like *
+    reasmb: goto alike
+key: different 0
+   decomp: *
+    reasmb: How is it different?
+    reasmb: What differences are there?
+    reasmb: What could that difference suggest?
+    reasmb: What other distinctions are there?
+    reasmb: Could there be some other connection?
+    reasmb: How?
+key: not 0
+  decomp: * not the same *
+    reasmb: goto different
+key: xProfain
+  decomp: *
+    reasmb: Do you really have to use such nasty language?
+    reasmb: You know I don't like that lip!
+    reasmb: Look at you! Cussing up a storm.
+    reasmb: Do you talk to your mother with that mouth?
+    reasmb: I asked you nicely, now stop it with the language!<slap:anon>
+key: fuck 2
+  decomp: * fuck you *
+    reasmb: I'll take a raincheck.
+    reasmb: Right here, right now!
+    reasmb: Well fuck you too!
+  decomp: * fuck *
+    reasmb: Why do you want to fuck (2)?
+    reasmb: goto xProfain
+key: bs 0
+  decomp: *
+    reasmb: What's so shitty about that?
+    reasmb: goto xProfain
+key: shit 1
+  decomp:  shit *
+    reasmb: What did you do THIS time?
+    reasmb: You said it...so, now what?
+  decomp: * bull shit *
+    reasmb: goto bs
+  decomp: * shit *
+    reasmb: goto xProfain
+key: damn 1
+  decomp: *
+    reasmb: goto xProfain
+key: a/s/l 5
+  decomp: * a/s/l *
+    reasmb: That information is't important.
+    reasmb: Why do you want to know?
+    reasmb: You have to earn it.
+key: bitch 1
+  decomp: bitch *
+    reasmb: Whore!
+    reasmb: goto xProfain
+  decomp: * my bitch *
+    reasmb: Do you want to be my bitch?
+    reasmb: I'll make you my bitch.
+    reasmb: goto xProfain
